@@ -1,0 +1,187 @@
+Script started on Mon Mar 30 15:09:19 2026
+/Users/nicholassummerlee/.zshrc:source:4: no such file or directory: /Users/nicholassummerlee/.openclaw/completions/openclaw.zsh
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro-2.local/Users/nicholassummerlee[0m[27m[24m[Jnicholassummerlee@MacBook-Pro-2 ~ % [K[?2004hppwd[?2004l
+/Users/nicholassummerlee
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro-2.local/Users/nicholassummerlee[0m[27m[24m[Jnicholassummerlee@MacBook-Pro-2 ~ % [K[?2004h[7mcd /Users/nicholassummerlee/desktop/projects[7m/[7mproof-projects/projects/02-network-services[27m[K
+[7mpwd[27m[K
+[7mls evidence[27m[K[3A[25C[27mc[27md[27m [27m/[27mU[27ms[27me[27mr[27ms[27m/[27mn[27mi[27mc[27mh[27mo[27ml[27ma[27ms[27ms[27mu[27mm[27mm[27me[27mr[27ml[27me[27me[27m/[27md[27me[27ms[27mk[27mt[27mo[27mp[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms/[27mp[27mr[27mo[27mo[27mf[27m-[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m0[27m2[27m-[27mn[27me[27mt[27mw[27mo[27mr[27mk[27m-[27ms[27me[27mr[27mv[27mi[27mc[27me[27ms[1B[27mp[27mw[27md[1B[27ml[27ms[27m [27me[27mv[27mi[27md[27me[27mn[27mc[27me[?2004l
+/Users/nicholassummerlee/desktop/projects/proof-projects/projects/02-network-services
+screenshots			terminal-session-lab02.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro-2.local/Users/nicholassummerlee/desktop/projects/proof-projects/projects/02-network-services[0m[27m[24m[Jnicholassummerlee@MacBook-Pro-2 02-network-services % [K[?2004hlls[?2004l
+evidence
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro-2.local/Users/nicholassummerlee/desktop/projects/proof-projects/projects/02-network-services[0m[27m[24m[Jnicholassummerlee@MacBook-Pro-2 02-network-services % [K[?2004hsssh nick@192.168.64.2[?2004l
+nick@192.168.64.2's password: 
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-106-generic aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Mar 30 07:13:54 PM UTC 2026
+
+  System load:             0.0
+  Usage of /:              44.1% of 10.70GB
+  Memory usage:            6%
+  Swap usage:              0%
+  Processes:               108
+  Users logged in:         1
+  IPv4 address for enp0s1: 192.168.64.2
+  IPv6 address for enp0s1: fd91:859:e97b:97e2:30b6:c3ff:fe8e:609a
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Mar 30 17:38:37 2026 from 192.168.64.1
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ hostname
+[?2004llab-srv01
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ systemctl status ssh --no-pager
+[?2004l[0;1;32m●[0m ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (]8;;file://lab-srv01/usr/lib/systemd/system/ssh.service/usr/lib/systemd/system/ssh.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Mon 2026-03-30 16:01:05 UTC; 3h 13min ago
+TriggeredBy: [0;1;32m●[0m ssh.socket
+       Docs: ]8;;man:sshd(8)man:sshd(8)]8;;
+             ]8;;man:sshd_config(5)man:sshd_config(5)]8;;
+   Main PID: 1391 (sshd)
+      Tasks: 1 (limit: 4545)
+     Memory: 5.2M (peak: 6.2M)
+        CPU: 370ms
+     CGroup: /system.slice/ssh.service
+             └─[0;38;5;245m1391 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"[0m
+
+Mar 30 17:38:14 lab-srv01 sshd[3308]: Accepted password for nick from 192.1…ssh2
+Mar 30 17:38:14 lab-srv01 sshd[3308]: pam_unix(sshd:session): session opene…d=0)
+Mar 30 17:38:14 lab-srv01 sshd[3308]: pam_unix(sshd:session): session close…nick
+Mar 30 17:38:16 lab-srv01 sshd[3357]: Accepted password for nick from 192.1…ssh2
+Mar 30 17:38:16 lab-srv01 sshd[3357]: pam_unix(sshd:session): session opene…d=0)
+Mar 30 17:38:16 lab-srv01 sshd[3357]: pam_unix(sshd:session): session close…nick
+Mar 30 17:38:37 lab-srv01 sshd[3406]: Accepted password for nick from 192.1…ssh2
+Mar 30 17:38:37 lab-srv01 sshd[3406]: pam_unix(sshd:session): session opene…d=0)
+Mar 30 19:13:54 lab-srv01 sshd[3529]: Accepted password for nick from 192.1…ssh2
+Mar 30 19:13:54 lab-srv01 sshd[3529]: pam_unix(sshd:session): session opene…d=0)
+Hint: Some lines were ellipsized, use -l to show in full.
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ sudo apt update
+[?2004l[sudo] password for nick: 
+Sorry, try again.
+[sudo] password for nick: 
+[33m0% [Working][0m            Hit:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+[33m0% [Working][0m[33m0% [Waiting for headers][0m                        Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
+[33m0% [2 InRelease 14.2 kB/126 kB 11%][0m[33m                                   0% [Working][0m[33m0% [Waiting for headers][0m                        Get:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB]
+[33m0% [3 InRelease 14.2 kB/126 kB 11%][0m[33m                                   0% [Working][0m[33m0% [Waiting for headers][0m                        Get:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
+[33m0% [4 InRelease 6,932 B/126 kB 5%][0m[33m                                  0% [Working][0m[33m23% [Waiting for headers][0m                         Get:5 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages [1,964 kB]
+[33m23% [5 Packages 12.8 kB/1,964 kB 1%][0m[33m                                    53% [Waiting for headers][0m                         Get:6 http://ports.ubuntu.com/ubuntu-ports noble-updates/main Translation-en [339 kB]
+[33m55% [6 Translation-en 107 kB/339 kB 32%][0m[33m55% [5 Packages store 0 B] [6 Translation-en 107 kB/339 kB 32%][0m                                                               Get:7 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Components [174 kB]
+[33m58% [5 Packages store 0 B] [7 Components-arm64 15.4 kB/174 kB 9%][0m[33m                                                                 61% [5 Packages store 0 B][0m                          Get:8 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Components [212 B]
+                          Get:9 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Components [385 kB]
+[33m61% [5 Packages store 0 B] [9 Components-arm64 0 B/385 kB 0%][0m                                                             Get:10 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Components [208 B]
+                                                             Get:11 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 Components [3,564 B]
+                                                             Get:12 http://ports.ubuntu.com/ubuntu-ports noble-backports/restricted arm64 Components [216 B]
+[33m                                                             67% [5 Packages store 0 B][0m                          Get:13 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Components [13.2 kB]
+                          Get:14 http://ports.ubuntu.com/ubuntu-ports noble-backports/multiverse arm64 Components [212 B]
+[33m67% [5 Packages store 0 B] [Waiting for headers][0m                                                Get:15 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages [1,682 kB]
+[33m67% [5 Packages store 0 B] [15 Packages 0 B/1,682 kB 0%][0m[33m                                                        92% [5 Packages store 0 B][0m[33m                          93% [Waiting for headers][0m[33m93% [6 Translation-en store 0 B] [Waiting for headers][0m[33m                                                      93% [Waiting for headers][0m[33m93% [7 Components-arm64 store 0 B] [Waiting for headers][0m[33m                                                        93% [Waiting for headers][0m[33m93% [Waiting for headers][0m[33m93% [9 Components-arm64 store 0 B] [Waiting for headers][0m[33m                                                        93% [Waiting for headers][0m[33m93% [Waiting for headers][0m[33m93% [11 Components-arm64 store 0 B] [Waiting for headers][0m[33m                                                         93% [Waiting for headers][0m[33m94% [Waiting for headers][0m[33m94% [13 Components-arm64 store 0 B] [Waiting for headers][0m[33m                                                         94% [Waiting for headers][0m[33m94% [Waiting for headers][0m[33m94% [15 Packages store 0 B] [Waiting for headers][0m[33m                                                 94% [Waiting for headers][0m                         Get:16 http://ports.ubuntu.com/ubuntu-ports noble-security/main Translation-en [250 kB]
+[33m95% [16 Translation-en 35.7 kB/250 kB 14%][0m[33m                                          98% [Waiting for headers][0m                         Get:17 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Components [18.4 kB]
+[33m98% [17 Components-arm64 18.4 kB/18.4 kB 100%][0m                                              Get:18 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Components [208 B]
+[33m98% [16 Translation-en store 0 B] [18 Components-arm64 208 B/208 B 100%][0m                                                                        Get:19 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Components [74.3 kB]
+[33m98% [16 Translation-en store 0 B] [19 Components-arm64 2,117 B/74.3 kB 3%][0m                                                                          Get:20 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Components [208 B]
+[33m                                                                          99% [16 Translation-en store 0 B][0m[33m                                 99% [Working][0m[33m99% [17 Components-arm64 store 0 B][0m[33m                                   100% [Working][0m[33m100% [Working][0m[33m100% [19 Components-arm64 store 0 B][0m[33m                                    100% [Working][0m[33m100% [Working][0m              Fetched 5,284 kB in 1s (4,761 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 2%Reading package lists... 2%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 33%Reading package lists... 33%Reading package lists... 46%Reading package lists... 46%Reading package lists... 46%Reading package lists... 46%Reading package lists... 46%Reading package lists... 46%Reading package lists... 51%Reading package lists... 51%Reading package lists... 54%Reading package lists... 54%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 73%Reading package lists... 73%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 78%Reading package lists... 78%Reading package lists... 81%Reading package lists... 81%Reading package lists... 90%Reading package lists... 90%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ sudo apt instal;[Kl -y nginx
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  nginx-common
+Suggested packages:
+  fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  nginx nginx-common
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
+Need to get 562 kB of archives.
+After this operation, 1,621 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 nginx-common all 1.24.0-2ubuntu7.6 [43.5 kB]
+[33m2% [1 nginx-common 14.2 kB/43.5 kB 33%][0m[33m                                       16% [Working][0m             Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 nginx arm64 1.24.0-2ubuntu7.6 [518 kB]
+[33m17% [2 nginx 5,500 B/518 kB 1%][0m[33m                               100% [Working][0m              Fetched 562 kB in 1s (543 kB/s)
+Preconfiguring packages ...
+
+7[0;23r8[1ASelecting previously unselected package nginx-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 91646 files and directories currently installed.)
+Preparing to unpack .../nginx-common_1.24.0-2ubuntu7.6_all.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 11%][49m[39m [######....................................................] 8Unpacking nginx-common (1.24.0-2ubuntu7.6) ...
+7[24;0f[42m[30mProgress: [ 22%][49m[39m [############..............................................] 8Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.24.0-2ubuntu7.6_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 33%][49m[39m [###################.......................................] 8Unpacking nginx (1.24.0-2ubuntu7.6) ...
+7[24;0f[42m[30mProgress: [ 44%][49m[39m [#########################.................................] 8Setting up nginx-common (1.24.0-2ubuntu7.6) ...
+7[24;0f[42m[30mProgress: [ 56%][49m[39m [################################..........................] 8Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /usr/lib/systemd/system/nginx.service.
+7[24;0f[42m[30mProgress: [ 67%][49m[39m [######################################....................] 8Setting up nginx (1.24.0-2ubuntu7.6) ...
+7[24;0f[42m[30mProgress: [ 78%][49m[39m [#############################################.............] 8 * Upgrading binary nginx       [80G [74G[ OK ]
+7[24;0f[42m[30mProgress: [ 89%][49m[39m [###################################################.......] 8Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ufw (0.36.2-6) ...
+
+7[0;24r8[1A[JScanning processes... [                                                        ]Scanning processes... [                                                        ]Scanning processes... [                                                        ]Scanning processes... [=                                                       ]Scanning processes... [=                                                       ]Scanning processes... [==                                                      ]Scanning processes... [==                                                      ]Scanning processes... [===                                                     ]Scanning processes... [===                                                     ]Scanning processes... [====                                                    ]Scanning processes... [====                                                    ]Scanning processes... [=====                                                   ]Scanning processes... [=====                                                   ]Scanning processes... [======                                                  ]Scanning processes... [======                                                  ]Scanning processes... [=======                                                 ]Scanning processes... [=======                                                 ]Scanning processes... [========                                                ]Scanning processes... [========                                                ]Scanning processes... [=========                                               ]Scanning processes... [=========                                               ]Scanning processes... [==========                                              ]Scanning processes... [==========                                              ]Scanning processes... [===========                                             ]Scanning processes... [===========                                             ]Scanning processes... [============                                            ]Scanning processes... [============                                            ]Scanning processes... [=============                                           ]Scanning processes... [=============                                           ]Scanning processes... [==============                                          ]Scanning processes... [==============                                          ]Scanning processes... [==============                                          ]Scanning processes... [===============                                         ]Scanning processes... [===============                                         ]Scanning processes... [================                                        ]Scanning processes... [================                                        ]Scanning processes... [=================                                       ]Scanning processes... [=================                                       ]Scanning processes... [==================                                      ]Scanning processes... [==================                                      ]Scanning processes... [===================                                     ]Scanning processes... [===================                                     ]Scanning processes... [====================                                    ]Scanning processes... [====================                                    ]Scanning processes... [=====================                                   ]Scanning processes... [=====================                                   ]Scanning processes... [======================                                  ]Scanning processes... [======================                                  ]Scanning processes... [=======================                                 ]Scanning processes... [=======================                                 ]Scanning processes... [========================                                ]Scanning processes... [========================                                ]Scanning processes... [=========================                               ]Scanning processes... [=========================                               ]Scanning processes... [==========================                              ]Scanning processes... [==========================                              ]Scanning processes... [===========================                             ]Scanning processes... [===========================                             ]Scanning processes... [============================                            ]Scanning processes... [============================                            ]Scanning processes... [============================                            ]Scanning processes... [=============================                           ]Scanning processes... [=============================                           ]Scanning processes... [==============================                          ]Scanning processes... [==============================                          ]Scanning processes... [===============================                         ]Scanning processes... [===============================                         ]Scanning processes... [================================                        ]Scanning processes... [================================                        ]Scanning processes... [=================================                       ]Scanning processes... [=================================                       ]Scanning processes... [==================================                      ]Scanning processes... [==================================                      ]Scanning processes... [===================================                     ]Scanning processes... [===================================                     ]Scanning processes... [====================================                    ]Scanning processes... [====================================                    ]Scanning processes... [=====================================                   ]Scanning processes... [=====================================                   ]Scanning processes... [======================================                  ]Scanning processes... [======================================                  ]Scanning processes... [=======================================                 ]Scanning processes... [=======================================                 ]Scanning processes... [========================================                ]Scanning processes... [========================================                ]Scanning processes... [=========================================               ]Scanning processes... [=========================================               ]Scanning processes... [==========================================              ]Scanning processes... [==========================================              ]Scanning processes... [==========================================              ]Scanning processes... [===========================================             ]Scanning processes... [===========================================             ]Scanning processes... [============================================            ]Scanning processes... [============================================            ]Scanning processes... [=============================================           ]Scanning processes... [=============================================           ]Scanning processes... [==============================================          ]Scanning processes... [==============================================          ]Scanning processes... [===============================================         ]Scanning processes... [===============================================         ]Scanning processes... [================================================        ]Scanning processes... [================================================        ]Scanning processes... [=================================================       ]Scanning processes... [=================================================       ]Scanning processes... [==================================================      ]Scanning processes... [==================================================      ]Scanning processes... [===================================================     ]Scanning processes... [===================================================     ]Scanning processes... [====================================================    ]Scanning processes... [====================================================    ]Scanning processes... [=====================================================   ]Scanning processes... [=====================================================   ]Scanning processes... [======================================================  ]Scanning processes... [======================================================  ]Scanning processes... [======================================================= ]Scanning processes... [======================================================= ]Scanning processes... [========================================================]Scanning processes...                                                           
+Scanning linux images... [                                                     ]Scanning linux images... [=================                                    ]Scanning linux images... [===================================                  ]Scanning linux images... [=====================================================]Scanning linux images...                                                        
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ sudo systemctl enable --now nginx
+[?2004lSynchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable nginx
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ systemctl is-active nginx
+[?2004lactive
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ hostname -I
+[?2004l192.168.64.2 fd91:859:e97b:97e2:30b6:c3ff:fe8e:609a 
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ ss -tulpn grep _[K-E '(:22|:80)'
+[?2004lError: an inet prefix is expected rather than "grep".
+Cannot parse dst/src address.
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ ss -tulpin | grep _E[K[K-E '(:22|:80)'
+[?2004ltcp   LISTEN 0      4096               0.0.0.0[01;31m[K:22[m[K        0.0.0.0:*   
+tcp   LISTEN 0      511                0.0.0.0[01;31m[K:80[m[K        0.0.0.0:*   
+tcp   LISTEN 0      4096                  [::][01;31m[K:22[m[K           [::]:*   
+tcp   LISTEN 0      511                   [::][01;31m[K:80[m[K           [::]:*   
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ curl[K[K[K[Kcurl _[K-I http://localhost
+[?2004lHTTP/1.1 200 OK
+[1mServer[0m: nginx/1.24.0 (Ubuntu)
+[1mDate[0m: Mon, 30 Mar 2026 19:20:46 GMT
+[1mContent-Type[0m: text/html
+[1mContent-Length[0m: 615
+[1mLast-Modified[0m: Mon, 30 Mar 2026 19:16:34 GMT
+[1mConnection[0m: keep-alive
+[1mETag[0m: "69cacc12-267"
+[1mAccept-Ranges[0m: bytes
+
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ sudo ufw status verbose
+[?2004lStatus: inactive
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ systemctl is-enabled nginx
+[?2004lenabled
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ nginx -v
+[?2004lnginx version: nginx/1.24.0 (Ubuntu)
+[?2004h]0;nick@lab-srv01: ~[01;32mnick@lab-srv01[00m:[01;34m~[00m$ exit
+[?2004llogout
+Connection to 192.168.64.2 closed.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://MacBook-Pro-2.local/Users/nicholassummerlee/desktop/projects/proof-projects/projects/02-network-services[0m[27m[24m[Jnicholassummerlee@MacBook-Pro-2 02-network-services % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Mon Mar 30 15:35:20 2026
