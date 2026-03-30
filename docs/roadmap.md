@@ -4,7 +4,7 @@
 - [x] Create repo structure
 - [x] Preserve existing projects
 - [x] Fill top-level documentation
-- [ ] Standardize project README files
+- [x] Standardize project README files
 
 ## Phase 1 - Linux Admin Basics
 - [x] Create first Linux VM
