@@ -2,9 +2,9 @@
 
 | Area | Evidence in Repo | Status |
 |---|---|---|
-| Git/GitHub workflow | Full repository history and commits | In progress |
-| Linux administration | `projects/01-linux-admin-basics` | Planned |
-| Networking | `projects/02-network-services` | Planned |
+| Git/GitHub workflow | Full repository history and commits | Present |
+| Linux administration | `projects/01-linux-admin-basics` | Present |
+| Networking | `projects/02-network-services` | Present |
 | Log analysis | `projects/00-soc-triage-lab`, `projects/03-log-analysis` | In progress |
 | IAM workflows | `projects/00-iam-device-tracker` | Present |
 | Vendor security review | `projects/00-vendor-intake-app` | Present |
